@@ -2,6 +2,7 @@
 
 One-page helper for threat modeling tracking using the advices of the *[Threat Modeling: Designing for Security](http://threatmodelingbook.com/)* book.
 
+![Screenshot](https://i.imgur.com/wIlgmkN.png "Screenshot")
 
 ## Framework
 
