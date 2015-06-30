@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>DummyTM by CirKu17</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>DummyTM</h1>
+        <p>One-page helper for threat modeling tracking.</p>
+
+        <p class="view"><a href="https://github.com/CirKu17/DummyTM">View the Project on GitHub <small>CirKu17/DummyTM</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/CirKu17/DummyTM/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/CirKu17/DummyTM/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/CirKu17/DummyTM">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="dummytm---dummy-threat-modeling-tracking" class="anchor" href="#dummytm---dummy-threat-modeling-tracking" aria-hidden="true"><span class="octicon octicon-link"></span></a>DummyTM - Dummy Threat Modeling Tracking</h1>
+
+<p>One-page helper for threat modeling tracking using the advices of the <em><a href="http://threatmodelingbook.com/">Threat Modeling: Designing for Security</a></em> book.</p>
+
+<h2>
+<a id="framework" class="anchor" href="#framework" aria-hidden="true"><span class="octicon octicon-link"></span></a>Framework</h2>
+
+<p>It consists of only two files:</p>
+
+<ul>
+<li>a diagram (html or image) : represents the system to analyze</li>
+<li>an html document editable in-browser : contains the diagram and a threat table</li>
+</ul>
+
+<h2>
+<a id="workflow" class="anchor" href="#workflow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow</h2>
+
+<p>The workflow mocks the one treated on the book and includes</p>
+
+<ul>
+<li>drawing a simple diagram representing the entities forming the system to analyze, along with trust borders, accompanied by notes and indexes</li>
+<li>compiling a threat table with certain attributes during threat identification.</li>
+</ul>
+
+<p>The page is largely editable and can be printed (on paper or pdf document) to save it.</p>
+
+<h2>
+<a id="diagram" class="anchor" href="#diagram" aria-hidden="true"><span class="octicon octicon-link"></span></a>Diagram</h2>
+
+<p>The diagram can be drawn as you prefer and imported in the html document.
+By default it expects an html file named <code>diagram.html</code> exported with an UML tool like <a href="http://draw.io">draw.io</a>.</p>
+
+<p>You can define entities as UML Objects, trust borders as Frames, index elements with subscripts and put notes.
+Add a brief description directly on the diagram to use it separately and edit the text above to introduce the document.</p>
+
+<h2>
+<a id="threat-table" class="anchor" href="#threat-table" aria-hidden="true"><span class="octicon octicon-link"></span></a>Threat Table</h2>
+
+<p>Is an editable html5 table. You can add, remove and move rows (thanks to <a href="https://github.com/ashblue" class="user-mention">@ashblue</a> for the design) and should be filled like this:</p>
+
+<p><strong>Diagram Element</strong> : the index of the diagram entity to be considered</p>
+
+<p><strong>Threat Type</strong> : the <a href="https://www.owasp.org/index.php/Threat_Risk_Modeling#STRIDE">STRIDE</a> category of the identified threat (a link is provided in-page for consultation)</p>
+
+<p><strong>Threat Description</strong> : self-explanatory description</p>
+
+<p><strong>Assumption</strong> : a presupposition for how to address the threat (e.g: <em>It's OK to ignore DoS because there's a backup server</em>)</p>
+
+<p><strong>DREAD Score</strong> : a 0-10 number indicating the risk score according to the <a href="https://www.owasp.org/index.php/Threat_Risk_Modeling#DREAD">DREAD</a> classification scheme (a link is provided in-page for consultation)</p>
+
+<p><strong>Bug Tracking / Vulnerability CVE or CWE</strong> : a bug tracking ID from a bug tracking platform, a CVE ID for Common Vulnerabilities and Exposures or a CWE ID for Common Weakness Enumeration.</p>
+
+<p>The whole table serves the purpose of tracking and addressing the identified threats and giving an immediate feedback of the threat modeling process.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/CirKu17">CirKu17</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
